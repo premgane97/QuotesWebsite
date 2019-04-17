@@ -1,0 +1,156 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 0px;
+        }
+        .style6
+        {
+            width: 72px;
+            height: 72px;
+        }
+        .style7
+        {
+            height: 23px;
+            text-align: right;
+        }
+        .style8
+        {
+            height: 23px;
+            width: 64px;
+        }
+        .style9
+        {
+            height: 23px;
+            width: 85px;
+            font-size: xx-large;
+            text-align: center;
+            }
+        .style10
+        {
+            height: 40px;
+        }
+        .style11
+        {
+            width: 1301px;
+            height: 267px;
+        }
+        .style12
+        {
+            text-align: right;
+        }
+        .style13
+        {
+            width: 100%;
+        }
+        .style14
+        {
+            font-family: "Courier New", Courier, monospace;
+            font-size: small;
+        }
+        .style15
+        {
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table align="center" class="style1">
+            <tr>
+                <td class="style8">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img alt="" class="style6" src="images/logo1.jpg" /></td>
+                <td class="style9">
+                    MyQuotes </td>
+                <td class="style9">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/SignUp.aspx" 
+                        style="font-size: medium">Sign Up</asp:HyperLink>
+                </td>
+                <td class="style9">
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/login.aspx" 
+                        style="font-size: medium">Login</asp:HyperLink>
+                </td>
+                <td class="style7">
+                    <asp:ImageButton ID="ImageButton3" runat="server" Height="26px" 
+                        ImageAlign="Right" ImageUrl="~/images/fb.png" ToolTip="Facebook" Width="26px" />
+&nbsp;
+                    <asp:ImageButton ID="ImageButton4" runat="server" Height="26px" 
+                        ImageAlign="Right" ImageUrl="~/images/twetter.png" ToolTip="Twetter" 
+                        Width="26px" />
+&nbsp;
+                    <asp:ImageButton ID="ImageButton1" runat="server" Height="26px" 
+                        ImageAlign="Right" ImageUrl="~/images/download.jpg" ToolTip="Instagram" 
+                        Width="26px" />
+&nbsp;
+                    <strong><span class="style15">Follow us on:-</span></strong><asp:ImageButton ID="ImageButton2" runat="server" Height="26px" 
+                        ImageAlign="Right" ImageUrl="~/images/gp.png" ToolTip="Google Plus" 
+                        Width="26px" />
+&nbsp;</td>
+            </tr>
+            <tr>
+                <td bgcolor="#0066FF" colspan="5" height="40">
+                    <asp:Menu ID="Menu1" runat="server" onmenuitemclick="Menu1_MenuItemClick" 
+                        Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Picture" Value="Picture"></asp:MenuItem>
+                            <asp:MenuItem Text="About Us" Value="About Us" NavigateUrl="~/AboutUS.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Contact Us" Value="Contact Us" 
+                                NavigateUrl="~/ContactUs.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Feedback" Value="Feedback" NavigateUrl="~/Feedback.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Authors" Value="Authors" NavigateUrl="~/Authors.aspx"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#33CCFF" ForeColor="White" />
+                        <StaticMenuItemStyle Font-Size="Larger" ForeColor="Black" 
+                            HorizontalPadding="60px" />
+                    </asp:Menu>
+                </td>
+            </tr>
+            
+            <tr>
+                <td bgcolor="White" colspan="5" class="style10">
+                    <img align="middle" alt="" class="style11" src="images/Capture.PNG" /></td>
+            </tr>
+            
+        </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <div class="style12">
+            <br />
+            <table align="center" class="style13">
+                <tr>
+                    <td bgcolor="#FFFFCC">
+                        <pre class="style14" 
+                            style="margin: 0px; padding: 0.5em; line-height: 14pt; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 204); text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</pre>
+                        <pre class="style14" 
+                            style="margin: 0px; padding: 0.5em; line-height: 14pt; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 204); text-decoration-style: initial; text-decoration-color: initial;">Copyright (C) Microsoft Corporation.</pre>
+                        <pre class="style14" 
+                            style="margin: 0px; padding: 0.5em; line-height: 14pt; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 204); text-decoration-style: initial; text-decoration-color: initial;"> All rights reserved.</pre>
+                        <span class="style14">Designed and Developed by:</span><br class="style14" />
+                        <br class="style14" />
+                        <span class="style14">Prem Gane</span><br class="style14" />
+                        <span class="style14">Rahul Ghag</span><br class="style14" />
+                        <span class="style14">Rachana sunki</span><br class="style14" />
+                        <span class="style14">Priya Meghal</span><br class="style14" />
+                        <span class="style14">Gayatri Meka</span></td>
+                </tr>
+            </table>
+            <br />
+            <br />
+        </div>
+    </div>
+    </form>
+</body>
+</html>
